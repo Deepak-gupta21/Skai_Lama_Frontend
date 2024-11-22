@@ -14,7 +14,10 @@ const LoginPage = () => {
 
     try {
       // Make API call to check if username exists
-      const response = await axios.post('http://localhost:5000/api/login', { username });
+      const response = await axios.post('
+                                         https://skai-lama-backend.vercel.app/api/login
+                                        // http://localhost:5000/api/login
+      ', { username });
        console.log("response",response);
       if (response.data.usernameExists) {
         setIsUserFound(true);
@@ -34,7 +37,10 @@ const LoginPage = () => {
 
     try {
       // Make API call to register a new user
-      const response = await axios.post('http://localhost:5000/api/register', { username });
+      const response = await axios.post('
+                                        https://skai-lama-backend.vercel.app/api/register
+                                        // http://localhost:5000/api/register
+      ', { username });
 
       if (response.status === 201) {
         alert('Registration successful! Please log in.');
