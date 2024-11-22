@@ -1,0 +1,138 @@
+/* Main container styling */
+.project-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    width: 250px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+  }
+  
+  .sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 15px;
+  }
+  
+  .sidebar ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .sidebar ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Content Area Styling */
+  .content-area {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  /* Breadcrumbs Styling */
+  .breadcrumb-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .breadcrumbs {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .breadcrumbs a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .breadcrumbs a:hover {
+    text-decoration: underline;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .icon {
+    font-size: 24px;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .icon:hover {
+    color: #0056b3;
+  }
+  
+  /* Styling for subpages in the content area */
+  .content-area h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .content-area p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+
+  /* Three Boxes Container */
+.boxes-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  /* Box Styling */
+  .box {
+    width: 30%; /* Each box takes up 30% of the container width */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    text-align: center; /* Centers content inside the box */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+  }
+  
+  /* Box Image */
+  .box img {
+    width: 100px; /* Fixed size for images */
+    height: 100px; /* Fixed size for images */
+    object-fit: cover; /* Ensures the image maintains aspect ratio while filling */
+    border-radius: 50%; /* Circle shape for the image */
+    margin-bottom: 15px;
+  }
+  
+  /* Box Heading */
+  .box h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Box Paragraph */
+  .box p {
+    font-size: 14px;
+    color: #666;
+  }
+  
